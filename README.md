@@ -1,6 +1,6 @@
 # TP IONIC 02
 ###### From _ionic blank starter_
-![Angular CI]
+![Node.js CI](https://github.com/Romdeux/TP_Ionic_Ynov/workflows/Node.js%20CI/badge.svg)
 #### Notation
 
 - CI:
