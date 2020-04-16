@@ -11,7 +11,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 })
 export class HomePage {
 
-  title: string;
+  title: string = "Mon Titre";
   imgData: string;
   geolocArray: { lat: number, lng: number }[] = [];
 
