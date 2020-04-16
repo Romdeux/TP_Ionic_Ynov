@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+    <ion-toolbar class="content">
+        <ion-buttons slot="start">
+            <ion-back-button text="Retour"></ion-back-button>
+        </ion-buttons>
+        <ion-buttons (click)="switchCamera()" slot="start">
+            <ion-icon name="refresh-outline"></ion-icon>
+        </ion-buttons>
+        <ion-buttons (click)="colorEffect()" slot="start">
+            <ion-icon name="color-palette-outline"></ion-icon>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+<!-- <ion-fab>
+    <ion-back-button vertical="top" horizontal="end" slot="fixed">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-back-button>
+</ion-fab> -->

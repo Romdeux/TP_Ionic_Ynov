@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank 1
+      TP ionic IACOPINO Romain
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -27,36 +27,54 @@
     </ion-card> -->
 
     <ion-card>
-      <ion-item (click)="fireAlert()" class="ion-activated">
-        <ion-icon name="wifi" slot="start"></ion-icon>
-        <ion-label>Fire Alert</ion-label>
-      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="6">
+          <ion-item (click)="fireAlert()" class="ion-activated">
+            <ion-icon name="wifi" slot="start"></ion-icon>
+            <ion-label>Fire Alert</ion-label>
+          </ion-item>
+        </ion-col>
 
-      <ion-item (click)="takePicture()" class="ion-activated">
-        <ion-icon name="wine" slot="start"></ion-icon>
-        <ion-label>Take picture</ion-label>
-      </ion-item>
+        <ion-col size="6">
+          <ion-item (click)="takePicture()" class="ion-activated">
+            <ion-icon name="wine" slot="start"></ion-icon>
+            <ion-label>Take picture</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
 
-      <ion-item routerLink="/login">
-        <ion-icon name="warning" slot="start"></ion-icon>
-        <ion-label>Go To Login</ion-label>
-      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="6">
+          <ion-item routerLink="/login">
+            <ion-icon name="person-outline" slot="start"></ion-icon>
+            <ion-label>Go To Login</ion-label>
+          </ion-item>
+        </ion-col>
 
-      <ion-item (click)="sendNotif()" class="ion-activated">
-        <ion-icon name="notifications-outline" slot="start"></ion-icon>
-        <ion-label>Send NOtification</ion-label>
-      </ion-item>
+        <ion-col size="6">
+          <ion-item (click)="sendNotif()" class="ion-activated">
+            <ion-icon name="notifications-outline" slot="start"></ion-icon>
+            <ion-label>Send Notification</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
 
-      <ion-item (click)="startCamera()" class="ion-activated">
-        <ion-icon name="videocam-outline" slot="start"></ion-icon>
-        <ion-label>Start Camera</ion-label>
-      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="6">
+          <ion-item routerLink="/camera" class="ion-activated">
+            <ion-icon name="videocam-outline" slot="start"></ion-icon>
+            <ion-label>Start Camera</ion-label>
+          </ion-item>
+        </ion-col>
 
-      <!-- <ion-item (click)="getGeolocation()"> -->
-      <ion-item>
-        <ion-icon name="location-outline" slot="start"></ion-icon>
-        <ion-label>Geolocation</ion-label>
-      </ion-item>
+        <ion-col size="6">
+          <ion-item>
+            <ion-icon name="location-outline" slot="start"></ion-icon>
+            <ion-label>Geolocation</ion-label>
+          </ion-item>
+        </ion-col>
+
+      </ion-row>
     </ion-card>
     <ion-card *ngIf="imgData">
       <img [src]="imgData">
