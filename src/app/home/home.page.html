@@ -82,9 +82,31 @@
   </div>
 
   <ion-list>
-    <ion-item *ngFor="let item of geolocArray">
-      <ion-label>Lat : {{item.lat}}, Lng: {{item.lng}}</ion-label>
-    </ion-item>
+
+    <ion-row>
+      <ion-col size="6" class="geoloc_title">
+        <ion-label>Latitude</ion-label>
+      </ion-col>
+      <ion-col size="6" class="geoloc_title">
+        <ion-label>longitude</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6" class="geoloc_content">
+        <ion-item *ngFor="let item of geolocArray">
+          <ion-label>{{item.lat}}</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="6" class="geoloc_content">
+        <ion-item *ngFor="let item of geolocArray">
+          <ion-label>{{item.lng}}</ion-label>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+
   </ion-list>
 
 </ion-content>

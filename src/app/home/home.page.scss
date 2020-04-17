@@ -6,3 +6,16 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+.geoloc_title {
+  font-size: 1.5em;
+  text-align: center;
+
+  border-bottom: 1px solid white;
+}
+
+.geoloc_content {
+  * {
+    text-align: center;
+  }
+}

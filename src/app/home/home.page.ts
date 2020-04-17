@@ -74,7 +74,7 @@ export class HomePage {
     this.localNotifications.schedule({
       id: 1,
       title: 'You sent a notif',
-      text: 'Single ILocalNotification',
+      text: 'This notification has been send from TP ionic IACOPINO Romain',
     });
   }
 
